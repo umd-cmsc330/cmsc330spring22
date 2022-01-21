@@ -1,1 +1,7 @@
-# cmsc330spring22
+# CMSC330, Spring 22
+
+## Projects
+
+## Discussion Exercises
+
+## Solutions
