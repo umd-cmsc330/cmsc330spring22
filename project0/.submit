@@ -1,0 +1,9 @@
+[course]
+id = 358171
+name = "CMSC330"
+term = "Spring 2022"
+
+[assignment]
+id = 1802451
+name = "Project 0 - Setup"
+files = [ "p0.report" ]
