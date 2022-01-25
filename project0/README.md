@@ -65,8 +65,7 @@ These instructions assume you have a Debian-based system (e.g. Ubuntu).  If you 
     - Run `sudo apt update` to update your local package listing
     - Run `sudo apt install ruby-dev sqlite3 libsqlite3-dev ocaml ocaml-native-compilers camlp4 make m4 curl graphviz libssl-dev pkg-config`
 2. Install some Ruby gems
-    - Run `sudo gem install minitest sqlite3 sinatra`
-    - If it hangs on `Installing ri documentation for sinatra`, just hit Ctrl+C.  It will have successfully installed anyway
+    - Run `sudo gem install --no-document minitest sqlite3 sinatra`
 3. Install and initialize the OCaml package manager
     - Run `sh <(curl -sL https://raw.githubusercontent.com/ocaml/opam/master/shell/install.sh)` (when prompted for the installation location, just hit enter to select the default)
         - Run `opam --version`.  You should be on version 2 (followed by some versions, just make sure the major version is 2).  Check out [the manual](https://opam.ocaml.org/doc/Install.html) if this is not the case, you may have to follow special directions for your particular operating system and version.
@@ -106,8 +105,7 @@ These instructions assume you have a Debian-based system (e.g. Ubuntu).  If you 
     - Run `sudo apt update && sudo apt upgrade` to update your local package listing
     - Run `sudo apt install ruby-dev sqlite3 libsqlite3-dev ocaml ocaml-native-compilers camlp4 make m4 curl graphviz libssl-dev pkg-config`
 3. Install some Ruby gems
-    - Run `sudo gem install minitest sqlite3 sinatra`
-    - If it hangs on `Installing ri documentation for sinatra`, just hit Ctrl+C.  It will have successfully installed anyway
+    - Run `sudo gem install --no-document minitest sqlite3 sinatra`
 4. Install and initialize the OCaml package manager
     - Run `sh <(curl -sL https://raw.githubusercontent.com/ocaml/opam/master/shell/install.sh)` (when prompted for the installation location, just hit enter to select the default)
         - Run `opam --version`.  You should be on version 2 (followed by some versions, just make sure the major version is 2).  Check out [the manual](https://opam.ocaml.org/doc/Install.html) if this is not the case, you may have to follow special directions for your particular operating system and version.
@@ -150,9 +148,7 @@ Check the [Special macOS Instructions](#special-macos-instructions) to check if 
 3. Install the basic dependencies
     - Run `brew install ocaml opam graphviz openssl`
 4. Install some Ruby gems
-    - Run `sudo gem install minitest sqlite3 sinatra`
-    - If it hangs on `Installing ri documentation for sinatra`, just hit Ctrl+C.
-      It will have successfully installed anyway
+    - Run `sudo gem install --no-document minitest sqlite3 sinatra`
 5. Initialize the OCaml package manager
     - Run `opam init`
     - When prompted to modify `~/.zshrc` or `~/.bash_profile` (or similar file), type "y"
