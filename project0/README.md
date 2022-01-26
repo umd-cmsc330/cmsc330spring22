@@ -121,7 +121,9 @@ These instructions assume you have a Debian-based system (e.g. Ubuntu).  If you 
     - We will be using OCaml version 4.12.0.  Run `ocaml -version` to check which version is currently installed
     - If you are already on 4.12.0, you can skip to #6
     - Run `opam update`
-    - If you are on another version, run `opam switch 4.12.0`.  If you get an error saying that switch is not currently installed, run `opam switch create 4.12.0`.  This may take a while, please be patient
+    - If you are on another version, run `opam switch 4.12.0`
+    - If you get an error saying that switch is not currently installed, run `opam switch create 4.12.0`.  This may take a while, please be patient
+      - While installing the new switch, if you get an error for `bwrap`, first remove the `.opam` directory using `rm -r ~/.opam` and then reinitialize opam by **disabling sanboxing** using `opam init --disable-sandboxing`. Type "n" when prompted to modify `~/.profile`. Once opam has been initialized, rerun `opam switch create 4.12.0`
     - Run `eval $(opam env)`
     - Ensure you are now on the correct version by running `ocaml -version`
 6. Install OCaml packages
