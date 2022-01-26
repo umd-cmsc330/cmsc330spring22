@@ -2,7 +2,7 @@
 
 Due: February 9, 2022 at 11:59 PM
 
-This project is simply to get your system ready.  You will "submit" this project for a grade.  The good-faith attempt (GFA) rule **does not apply** to this project.
+This project is simply to get your system ready. Although you will "submit" this project on Gradescope, it is not counted towards your final grade.  The good-faith attempt (GFA) rule **does not apply** to this project.
 
 **Start with the [Instructions](#instructions)!**
 
