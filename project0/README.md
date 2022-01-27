@@ -2,7 +2,7 @@
 
 Due: February 9, 2022 at 11:59 PM
 
-This project is simply to get your system ready.  You will "submit" this project for a grade.  The good-faith attempt (GFA) rule **does not apply** to this project.
+This project is simply to get your system ready. Although you will "submit" this project on Gradescope, it is not counted towards your final grade.  The good-faith attempt (GFA) rule **does not apply** to this project.
 
 **Start with the [Instructions](#instructions)!**
 
@@ -121,7 +121,9 @@ These instructions assume you have a Debian-based system (e.g. Ubuntu).  If you 
     - We will be using OCaml version 4.12.0.  Run `ocaml -version` to check which version is currently installed
     - If you are already on 4.12.0, you can skip to #6
     - Run `opam update`
-    - If you are on another version, run `opam switch 4.12.0`.  If you get an error saying that switch is not currently installed, run `opam switch create 4.12.0`.  This may take a while, please be patient
+    - If you are on another version, run `opam switch 4.12.0`
+    - If you get an error saying that switch is not currently installed, run `opam switch create 4.12.0`.  This may take a while, please be patient
+      - While installing the new switch, if you get an error for `bwrap`, first remove the `.opam` directory using `rm -r ~/.opam` and then reinitialize opam by **disabling sanboxing** using `opam init --disable-sandboxing`. Type "n" when prompted to modify `~/.profile`. Once opam has been initialized, rerun `opam switch create 4.12.0`
     - Run `eval $(opam env)`
     - Ensure you are now on the correct version by running `ocaml -version`
 6. Install OCaml packages
@@ -206,7 +208,7 @@ passwords and try it again.
 
 ## Special macOS Instructions
 
-Verify you're running an older version of macOS. Either click the Apple button in the menubar in the top-left and click "About This Mac", or else run `sw_vers` from the terminal.
+Verify you're running an older version of macOS. Either click the Apple button in the menubar in the top-left and click "About This Mac", or else run `sw_vers` from the terminal. You should only need the special section if your macos version is less than 10.15
 
 Follow [the directions for macOS](#macos), but with some changes.
 
