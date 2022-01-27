@@ -208,7 +208,7 @@ passwords and try it again.
 
 ## Special macOS Instructions
 
-Verify you're running an older version of macOS. Either click the Apple button in the menubar in the top-left and click "About This Mac", or else run `sw_vers` from the terminal.
+Verify you're running an older version of macOS. Either click the Apple button in the menubar in the top-left and click "About This Mac", or else run `sw_vers` from the terminal. You should only need the special section if your macos version is less than 10.15
 
 Follow [the directions for macOS](#macos), but with some changes.
 
