@@ -149,8 +149,8 @@ Even though the data structure you will implement is up to you, keep the followi
   @phonebook2.add("Alice", "012-345-6789", false) == true
   @phonebook2.add("Bob", "012-345-6789", false) == true
   @phonebook2.add("Eve", "012-345-6789", true) == true
-  @phonebook2.add("Rob", "012-345-6789, true) == false
-  @phonebook2.add("Johnny B. Good", "012-345-6789, false) == true
+  @phonebook2.add("Rob", "012-345-6789", true) == false
+  @phonebook2.add("Johnny B. Good", "012-345-6789", false) == true
   ```
 
 #### `lookup(name)`
