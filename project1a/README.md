@@ -146,11 +146,11 @@ Even though the data structure you will implement is up to you, keep the followi
   
   ```ruby
   @phonebook2 = PhoneBook.new
-  @phonebook2.add("Alice", "012-345-6789", false) == true
-  @phonebook2.add("Bob", "012-345-6789", false) == true
-  @phonebook2.add("Eve", "012-345-6789", true) == true
-  @phonebook2.add("Rob", "012-345-6789", true) == false
-  @phonebook2.add("Johnny B. Good", "012-345-6789", false) == true
+  @phonebook2.add("Alice", "12-345-67890", false) == true
+  @phonebook2.add("Bob", "12-345-67890", false) == true
+  @phonebook2.add("Eve", "12-345-67890", true) == true
+  @phonebook2.add("Rob", "12-345-67890", true) == false
+  @phonebook2.add("Johnny B. Good", "12-345-67890", false) == true
   ```
 
 #### `lookup(name)`
