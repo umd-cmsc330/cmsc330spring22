@@ -30,13 +30,13 @@ To begin this project you will need to run `git pull` to get the updates. This p
 You can run the game (If no attack strategy file provided, it will be randomly generated)
 
 ```bash
-ruby src/main.rb test/public/inputs/player1.txt test/public/inputs/player2.txt
+ruby src/main.rb test/public/inputs/correct_ships_p1.txt test/public/inputs/correct_ships_p2.txt
 ```
 
 Or
 
 ```bash
-ruby src/main.rb test/public/inputs/player1.txt test/public/inputs/player2.txt test/public/inputs/attack1.txt test/public/inputs/attack2.txt
+ruby src/main.rb test/public/inputs/correct_ships_p1.txt test/public/inputs/correct_ships_p2.txt test/public/inputs/perfect_strat_p1.txt test/public/inputs/perfect_strat_p2.txt
 ```
 
 The format is as follows
