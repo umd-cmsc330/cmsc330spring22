@@ -1,0 +1,9 @@
+[course]
+id = 358171
+name = "CMSC330"
+term = "Spring 2022"
+
+[assignment]
+id = 1822607
+name = "Project 1b - Battleship game"
+files = [ "src/models/game_board.rb", "src/controllers/input_controller.rb" ]

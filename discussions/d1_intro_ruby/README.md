@@ -18,17 +18,12 @@ We will be implementing a simple database using Ruby data structures to store th
 
 An example of a table is below: 
 
-Name | Age | 
-
----------------------
-
-A    |  22        
-
-B    |  23       
-
-C    |  24          
-
-D    |  21   
+| Name |  Age | 
+|------|------|
+|  A   |  22  |        
+|  B   |  23  |     
+|  C   |  24  |        
+|  D   |  21  |   
 
 ## Part 1: `Tuple`
 
