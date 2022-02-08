@@ -9,5 +9,6 @@
 ## Discussion Exercises
 
 * [Discussion 1 - Introduction to Ruby](./discussions/d1_intro_ruby)
+* [Discussion 2 - Codeblocks and RegEx](./discussions/d2_regex)
 
 ## Solutions
