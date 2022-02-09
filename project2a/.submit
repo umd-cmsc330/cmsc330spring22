@@ -1,0 +1,9 @@
+[course]
+id = 358171
+name = "CMSC330"
+term = "Spring 2022"
+
+[assignment]
+id = 1841722
+name = "Project 2a - OCaml Basics"
+files = [ "src/basics.ml"]
