@@ -1,3 +1,5 @@
+# Solution from Fall 2019 Final Exam
+# (http://www.cs.umd.edu/~anwar/cmsc330_tests/final-soln-fall19.pdf)
 class WaitingTime
     def initialize(filename)
     	@wait_time = {}
@@ -29,6 +31,8 @@ class WaitingTime
     end
 end
 
+# Solution from Fall 2018 Final Exam
+# (http://www.cs.umd.edu/~anwar/cmsc330_tests/final-soln-fall2018.pdf)
 class DuckSorter
     def initialize(filename)
         @ducks = Hash.new []
