@@ -1,4 +1,4 @@
-# Discussion 3 - Friday, February 11<sup>th</sup>**
+# Discussion 3 - Friday, February 11<sup>th</sup>
 
 ## OCaml Introduction 
 
