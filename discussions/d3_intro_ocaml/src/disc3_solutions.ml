@@ -12,7 +12,7 @@ let rec sum lst = match lst with
 | [] -> 0
 | h::t -> h+sum t
 
-let max_list lst = match lst with 
+let rec max_list lst = match lst with 
 | [] -> 0
 | h::t -> max h (max_list t)
 
@@ -21,7 +21,7 @@ let sum_tuple t = match t with
 
 let rec product lst = match lst with 
 | [] -> 1
-| h::t -> h*product t in 
+| h::t -> h * (product t)
 
 let rec max_product lst = match lst with 
 | [] -> 0
@@ -29,11 +29,11 @@ let rec max_product lst = match lst with
 
 let rec length l = match l with 
 | [] -> 0
-| h::t -> 1+length t in 
+| h::t -> 1+length t
 
-let rec check_matrix_aux lst len = match l with 
+let rec check_matrix_aux lst len = match lst with 
 | [] -> true
-| h::t -> if length h = len then check_matrix_aux t s else false in 
+| h::t -> if length h = len then check_matrix_aux t len else false
 
 let check_matrix lst = match lst with 
 | h::t -> check_matrix_aux lst (length h)

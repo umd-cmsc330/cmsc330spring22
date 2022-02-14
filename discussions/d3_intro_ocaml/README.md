@@ -12,10 +12,6 @@ _Type:_ int -> string
 
 _Type:_ int -> int
 
-**Sum list:** Recursively find the sum of a list of numbers
-
-_Type:_ int list -> int
-
 **Fizz Buzz:** Similar to the common fizz buzz problem, return "fizz buzz" if a number is divisible by 15, "fizz" if a number is divisible by 3, and "buzz" if a number is divisible by 5. Return the empty string if a number isn't divisible by any. 
 
 _Type:_ int -> string
