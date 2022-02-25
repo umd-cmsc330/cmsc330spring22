@@ -75,7 +75,7 @@ d == "hello"
     * `let a: hello = ("a",5)`, `let b: coin = Heads`
     * Can do pattern matching with this
 * Other types include
-    * Records: `type date = {month: string, day: int}`
+    * Records: `type date = {month: string; day: int}`
     * `let today = {day=16; year=2017}`
     * To access fields, do `today.day`
 
