@@ -71,11 +71,11 @@ d == "hello"
 
 
 * In addition to basic types (int, string, etc.) we can define our own types
-    * `type hello = (str * int)` or `type Coin = Heads | Tails`
-    * `let a: hello = ("a",5)`, `let b: Coin = Heads`
+    * `type hello = (str * int)` or `type coin = Heads | Tails`
+    * `let a: hello = ("a",5)`, `let b: coin = Heads`
     * Can do pattern matching with this
 * Other types include
-    * Records: `type date = {month: string, day: int}`
+    * Records: `type date = {month: string; day: int}`
     * `let today = {day=16; year=2017}`
     * To access fields, do `today.day`
 
