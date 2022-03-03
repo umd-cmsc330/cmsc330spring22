@@ -1,0 +1,55 @@
+-----------------------------------------------------
+Closures, Currying, and Partial Application
+-----------------------------------------------------
+
+1.
+let x = 2;;
+let f y = x + y;;
+let x = 4;;
+f 3;;
+
+
+2. 
+int -> string -> bool
+
+
+3. Write a function 'add_n n lst' that adds 'n' to every element of the list without using recursion
+
+
+--------------------------------------------------------
+Imperative OCaml and Mutability
+--------------------------------------------------------
+
+1. 
+let z = 3;;
+let x = ref z;;
+
+
+2. !x
+
+
+3. x := 4
+
+
+4. 
+let y = x;;
+x := 4;;
+!y;;
+
+
+5. 
+let print_both (s, t) = 
+    print_string s;
+    print_string t;
+    0
+;;
+let number = print_both ("Hello", "World") in 
+number + 1
+;;
+
+
+6. 
+type point = { x : int; y : int; mutable color : string };;
+let p = { x = 0; y = 0; color = "red" };;
+p.color <- "white";;
+p.x <- 1;;
