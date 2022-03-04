@@ -51,7 +51,7 @@ We always discuss how everything in OCaml is immutable. Sometimes it is useful f
 * References in OCaml are like pointers in C
 * Use the ref function to allocate a reference to some space in memory
 * In the example, z is 3, and x points to a space in memory with value 3
-* Note that the binding of the variable is immutable. We can’t change x, only what x is pointing to
+* Note that the binding of the variable is immutable. We can’t change x, only the value that x is pointing to - ie, it's a constant pointer to the variable 
 
 2)
 * `!` is a function used to dereference a reference 
