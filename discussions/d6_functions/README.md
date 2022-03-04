@@ -85,4 +85,3 @@ We always discuss how everything in OCaml is immutable. Sometimes it is useful f
 * In this example, color is a mutable field, so we can change it even after setting it
 * `p.color <- “white”` is valid because color is a mutable field
 * `p.x <- 1` is invalid, though, because x is immutable 
-* If you still have 30 minutes left, administer the quiz. Otherwise, all done! 
