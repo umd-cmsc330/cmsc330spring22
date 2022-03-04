@@ -11,7 +11,7 @@
 * Say we have: `let rec f x = if x = 0 then 1 else x*(f (x-1))`
     * When this is run, OCaml sees the keyword `rec` and initially creates a variable, f->0
     * Then it will store the inner part of the function as a closure, with no variables 
-    * Finally let f -> this closure, and return it
+    * Finally, `let f ->` this closure, and return it
     * When the function is run, we add a variable to the environment and evaluate the code
 * The concept of closures will be a key idea in later projects
 
