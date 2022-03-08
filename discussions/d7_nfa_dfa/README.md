@@ -1,10 +1,8 @@
 # Discussion 7 - Friday, March 11<sup>th</sup>
  
-## NFA, DFA, and Regex Explanation + Practice (50 minutes)
+## NFA, DFA, and Regex Explanation + Practice 
 
-Explain NFA/DFA/Regex first and simultaneously walk through worksheet (Worksheet.pdf). 
-
-If there's extra time, go through additional practice / answer questions / Disc 7 - Automata Algorithms.pdf. 
+Worksheet.pdf, Disc 7 - Automata Algorithms.pdf (extra practice)
 
 ## NFA Accept
 * NFAs vs. DFAs: What's the difference?
@@ -54,7 +52,7 @@ If there's extra time, go through additional practice / answer questions / Disc 
 ![nfa2dfa](nfa2dfa_alt.jpg)
 
 ## RE -> NFA conversion
-* Go over the 3 basic operators (concatenation, union, kleene closure) and how to convert each of them to an NFA.
+* 3 basic operators: concatenation, union, kleene closure
 * Convert the following regular expressions to NFAs.
     * ab*|a*|c*
     * c(a|b)*
