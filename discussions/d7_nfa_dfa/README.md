@@ -39,20 +39,10 @@ Worksheet.pdf, Disc 7 - Automata Algorithms.pdf (extra practice)
 - NFA accept is essentially e-closure, move, e-closure, move, ....e-closure. In other words, e-closure, (move, e-closure,)* e-closure.
 - This will be key for future projects
 
-## NFA -> DFA conversion
-* We will convert the NFA above to a DFA.
-* Here's an idea: Let's create a DFA which has a state for each clone formation! In other words:
-    * For an NFA w/ states 1, 2, 3, 4, 5, and 6:
-    * The DFA has a state for each SUBSET of states we COULD be on.
-    * B-b-but aren't there 2^n subsets? Eek!
-    * Chill! We just have to account for subsets which represent possible (reachable) formations.
-        * For example, our DFA doesn't need a state for {1}. If we COULD be at state 1, we COULD be at state 2, also (via e transition).
-    * So, let's start at the first subset {1, 2} (e-closure of the start state) and do transitions over the alphabet and see what subsets actually show up!
-
-![nfa2dfa](nfa2dfa_alt.jpg)
-
 ## RE -> NFA conversion
 * 3 basic operators: concatenation, union, kleene closure
+
+### Question 2
 * Convert the following regular expressions to NFAs.
     * ab*|a*|c*
     * c(a|b)*
