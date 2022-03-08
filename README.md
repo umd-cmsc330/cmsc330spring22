@@ -15,3 +15,4 @@
 * [Discussion 3 - Introduction to OCaml](./discussions/d3_intro_ocaml)
 * [Discussion 4 - Map and Fold](./discussions/d4_map_fold)
 * [Discussion 5 - Types and Currying](./discussions/d5_typing)
+* [Discussion 6 - Closures and Imperative OCaml](./discussions/d6_functions)

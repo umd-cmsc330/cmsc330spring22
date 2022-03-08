@@ -11,7 +11,7 @@
 * Say we have: `let rec f x = if x = 0 then 1 else x*(f (x-1))`
     * When this is run, OCaml sees the keyword `rec` and initially creates a variable, f->0
     * Then it will store the inner part of the function as a closure, with no variables 
-    * Finally let f -> this closure, and return it
+    * Finally, `let f ->` this closure, and return it
     * When the function is run, we add a variable to the environment and evaluate the code
 * The concept of closures will be a key idea in later projects
 
@@ -51,7 +51,7 @@ We always discuss how everything in OCaml is immutable. Sometimes it is useful f
 * References in OCaml are like pointers in C
 * Use the ref function to allocate a reference to some space in memory
 * In the example, z is 3, and x points to a space in memory with value 3
-* Note that the binding of the variable is immutable. We can’t change x, only what x is pointing to
+* Note that the binding of the variable is immutable. We can’t change x, only the value that x is pointing to - ie, it's a constant pointer to the variable 
 
 2)
 * `!` is a function used to dereference a reference 
@@ -85,4 +85,3 @@ We always discuss how everything in OCaml is immutable. Sometimes it is useful f
 * In this example, color is a mutable field, so we can change it even after setting it
 * `p.color <- “white”` is valid because color is a mutable field
 * `p.x <- 1` is invalid, though, because x is immutable 
-* If you still have 30 minutes left, administer the quiz. Otherwise, all done! 
