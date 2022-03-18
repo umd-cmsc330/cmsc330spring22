@@ -33,7 +33,7 @@ Note: If there are 2 derivations for the same string, what does that mean? The g
 The exercise below goes into further detail 
 
 
-## Coding Excercise 
+## Coding Excercise (Optional) 
 * To go from source code to a running program, there are 3 steps (at least for our purposes):
     * Tokenizing/Lexing (separating text into smaller tokens)
     * Parsing (generating something meaningful from the tokens - an AST)
