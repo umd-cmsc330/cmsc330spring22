@@ -1,0 +1,9 @@
+[course]
+id = 358171
+name = "CMSC330"
+term = "Spring 2022"
+
+[assignment]
+id = 1959298
+name = "Project 4b - MicroCaml Interpreter"
+files = ["src/eval.ml"]
