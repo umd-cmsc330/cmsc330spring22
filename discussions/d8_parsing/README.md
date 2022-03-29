@@ -33,7 +33,7 @@ Note: If there are 2 derivations for the same string, what does that mean? The g
 The exercise below goes into further detail 
 
 
-## Coding Excercise 
+## Coding Excercise (Optional) 
 * To go from source code to a running program, there are 3 steps (at least for our purposes):
     * Tokenizing/Lexing (separating text into smaller tokens)
     * Parsing (generating something meaningful from the tokens - an AST)
@@ -54,7 +54,7 @@ The exercise below goes into further detail
 * Answer key in `lexer.ml`
 * Variant type `token`
 * Maintain an index that keeps track of where we are in the string, and move forward as we keep tokenizing.
-* In P5, you will have to worry about the order in which they have their `if/else` ... `if/else` (certain regexs should be checked before others).
+* In P4, you will have to worry about the order in which they have their `if/else` ... `if/else` (certain regexs should be checked before others).
 * It's probably also a good idea to just define all the regex's and store in variables at the top.
 
 ### Parser

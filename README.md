@@ -20,3 +20,4 @@
 * [Discussion 5 - Types and Currying](./discussions/d5_typing)
 * [Discussion 6 - Closures and Imperative OCaml](./discussions/d6_functions)
 * [Discussion 7 - NFAs and DFAs!](./discussions/d7_nfa_dfa)
+* [Discussion 8 - CFGs and Parsing](./discussions/d8_parsing)
