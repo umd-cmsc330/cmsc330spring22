@@ -1,7 +1,7 @@
 # Discussion 11 - Friday, April 8<sup>th</sup>
 
 ## Operational Semantics (From last week) (15 minutes)
-Review Operational Semantics from last week - ask any questions!  
+Reviewing Operational Semantics from last week - ask any questions!  
 
 ## Coding Excercise
 * Recall from last week, to go from source code to a running program, there are 3 steps (at least for our purposes):
