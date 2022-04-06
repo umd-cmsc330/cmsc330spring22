@@ -1,6 +1,6 @@
 # Discussion 11 - Friday, April 8<sup>th</sup>
 
-## Operational Semantics (From last week) (15 minutes)
+## Operational Semantics
 Reviewing Operational Semantics from last week - ask any questions!  
 
 ## Coding Excercise
@@ -15,9 +15,9 @@ Reviewing Operational Semantics from last week - ask any questions!
     * N -> n | (S)
     * where n is any integer
 
-## Interpreter (20 minutes)
+## Interpreter 
 * Open `interpreter.skeleton.ml`.
 * Answer key in `interpreter.ml`
 * General Approach: Make recursive calls to evaluate subexpressions
 
-## Intro to Lambda Calculus - Explanation + Practice (10 minutes)
+## Intro to Lambda Calculus - Explanation + Practice
