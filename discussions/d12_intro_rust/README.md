@@ -1,6 +1,6 @@
 # Discussion 12 - Friday, April 15<sup>th</sup>
 
-## What is Rust? (20 minutes)
+## What is Rust? 
 
 
 
@@ -75,7 +75,7 @@ Some common errors are
 4. Failing to return correct value from function
 5. Incorrect types (reference when regular variables should be used, etc.)
 
-## Debugging Problems (30 minutes)
+## Debugging Problems 
 
 Each of the functions in error.rs has an error; fix the error
 
