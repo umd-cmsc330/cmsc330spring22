@@ -50,7 +50,7 @@ pub fn create_hello_world()->String {
 
 }
 
-pub fn get_first_elem(a: Vec&lt;u32>) -> u32 {
+pub fn get_first_elem(a: &Vec<u32>) -> u32 {
 
     if(a.len() == 0) {
 
@@ -58,6 +58,6 @@ pub fn get_first_elem(a: Vec&lt;u32>) -> u32 {
 
     }
 
-	return a.get(0).unwrap(); //Unwrap the some 
+	return *a.get(0).unwrap(); //Unwrap the some and dereference
 
 }
