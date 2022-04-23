@@ -179,7 +179,7 @@ type value =
   | String of string
   | Closure of environment * var * expr (* not used in P4A *)
 
-and environment = (var * value) list (* not used in P4A *)
+and environment = (var * value ref) list (* not used in P4A *)
 
 and expr =
   | Value of value
