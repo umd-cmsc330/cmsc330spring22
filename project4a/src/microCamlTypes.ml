@@ -8,7 +8,7 @@ type value =
   | String of string
   | Closure of environment * var * expr
 
-and environment = (var * value) list
+and environment = (var * value ref) list
 
 and expr =
   | Value of value
