@@ -42,7 +42,7 @@ let rec string_of_value (v : value) : string =
   | Bool(b) -> "Bool " ^ string_of_bool b
   | String(s) -> "String \"" ^ s ^ "\""
   | Closure(env, s, e) -> 
-      "Closure(" ^ string_of_list (fun (v, v') -> "(" ^ v ^ ", " ^ string_of_value v' ^ ")") env ^ ", " ^ s ^ ", " ^ string_of_expr e ^ ")"
+      "Closure(" ^ string_of_list (fun (v, v') -> "(" ^ v ^ ", " ^ string_of_value (!v') ^ ")") env ^ ", " ^ s ^ ", " ^ string_of_expr e ^ ")"
 
 and string_of_expr (e : expr) : string =
   let unparse_two (s : string) (e1 : expr) (e2 : expr) =
