@@ -1,0 +1,7 @@
+[package]
+name = "stark_suit_repair"
+version = "0.2.0"
+authors = []
+edition = "2018"
+
+[dependencies]
