@@ -10,6 +10,7 @@
 * [Project 3 - Regular Expression Engine](./project3)
 * [Project 4a - MicroCaml Lexer and Parser](./project4a)
 * [Project 4b - MicroCaml Interpreter](./project4b)
+* [Project 5 - Stark Suit Repair](./project5)
 
 ## Discussion Exercises
 
