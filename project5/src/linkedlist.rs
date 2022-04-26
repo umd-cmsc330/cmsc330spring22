@@ -63,6 +63,7 @@ impl List {
 
 // Part 3
 
+#[derive(Clone)]
 pub struct Suit {
     pub armor: List,
     pub version: i32,
