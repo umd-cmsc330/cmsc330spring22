@@ -26,7 +26,7 @@ pub struct Armor {
 // Part 2
 
 // Students should fill in the Link type themselves. The Node and List types are given as is.
-type Link = unimplemented!();
+type Link = ();
 
 struct Node {
     data: Armor,
