@@ -1,6 +1,6 @@
 # Discussion 13 - Friday, April 22<sup>nd</sup>
 
-## What are the problems with Rust? (10 minutes)
+## What are the problems with Rust? 
 
 * As noted last week, Rust has two primary features: ownerships and mutability 
 * However (as you might have noticed) dealing with these is tough, especially for larger programs
@@ -29,7 +29,7 @@
 
 ### How do we fix these problems? 
 
-## Box, Rc, and RefCell (20 minutes)
+## Box, Rc, and RefCell
 
 ### Issue 1: 
 Can we store dynamically sized elements, say for example, LinkedLists? 
@@ -79,7 +79,7 @@ What if we want variable to have multiple owners, and the variable is editable?
   * `Rc` - Shares object by counting references, no one owner
   * `Refcell` - Allows for editing whatever is referenced by Rc
 
-## Graph Exercise (20 minutes)
+## Graph Exercise
 
 Say we want to make a simple Node class with left child, right child, and data (i32), and parent properties, AND be able to do something along the following: 
 

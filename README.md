@@ -10,6 +10,7 @@
 * [Project 3 - Regular Expression Engine](./project3)
 * [Project 4a - MicroCaml Lexer and Parser](./project4a)
 * [Project 4b - MicroCaml Interpreter](./project4b)
+* [Project 5 - Stark Suit Repair](./project5)
 
 ## Discussion Exercises
 
@@ -21,3 +22,7 @@
 * [Discussion 6 - Closures and Imperative OCaml](./discussions/d6_functions)
 * [Discussion 7 - NFAs and DFAs!](./discussions/d7_nfa_dfa)
 * [Discussion 8 - CFGs and Parsing](./discussions/d8_parsing)
+* [Discussion 10 - Operational Semantics and Parsing (cont)](./discussions/d10_eval)
+* [Discussion 11 - Lambda Calculus](./discussions/d11_lambda)
+* [Discussion 12 - Intro to Rust](./discussions/d12_intro_rust)
+* [Discussion 13 - Rust Memory](./discussions/d13_rust_memory)
