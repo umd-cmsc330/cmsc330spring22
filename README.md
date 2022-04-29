@@ -26,3 +26,4 @@
 * [Discussion 11 - Lambda Calculus](./discussions/d11_lambda)
 * [Discussion 12 - Intro to Rust](./discussions/d12_intro_rust)
 * [Discussion 13 - Rust Memory](./discussions/d13_rust_memory)
+* [Discussion 14 - Lambda Calc + Final Exam Review](./discussions/d14_security)
