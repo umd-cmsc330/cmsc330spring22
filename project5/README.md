@@ -12,8 +12,6 @@ Points: 49 public, 51 semipublic
 
 For this project you are allowed to use the library functions found in `std`, including `Vec`, `String`, `collections::HashMap`, and `Box`.
 
-However, you may **NOT** use `collections::BinaryHeap` for your implementation.  You must create your own.
-
 Also, you may not use any external crates for your implementation.
 
 ### Introduction
@@ -158,7 +156,7 @@ longest_sequence(&"") == None
 
 In this part, you will be responsible for creating a linked list that can be read from multiple threads.
 
-You may have implemented linked lists in C before. This exercise will be radically different, as functional style lists may share nodes (as in ocaml). While you will not manage memory directly (call `malloc`, `free`), you must consider how to share memory safely while upholding rust's invariants. By default, the borrow checker enforces memory is only accessible to one thread at a time. BTW, any usage of manual memory management (pointers, calling the allocator).
+You may have implemented linked lists in C before. This exercise will be radically different, as functional style lists may share nodes (as in ocaml). While you will not manage memory directly (call `malloc`, `free`), you must consider how to share memory safely while upholding rust's invariants. By default, the borrow checker enforces memory is only accessible to one thread at a time. 
 
 The list and list node types are mostly given to you. The challenge is to figure out what links between nodes look like. In C, these would be pointers. In garbage collected languages, these would transparently be references.
 
