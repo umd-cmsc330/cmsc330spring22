@@ -1,0 +1,53 @@
+= Garbage Collection and Synchronization
+:source-highlighter: highlight.js
+
+TIP: TLDR: https://doc.rust-lang.org/std/sync/struct.Arc.html[`Arc`] is like `Rc`, https://doc.rust-lang.org/std/sync/struct.RwLock.html[`RwLock]` is like https://doc.rust-lang.org/std/cell/struct.RefCell.html[`RefCell`] (with `RefCell::borrow` and `RefCell::borrow_mut` mapping to https://doc.rust-lang.org/std/sync/struct.RwLock.html#method.read[`RwLock::read`] and https://doc.rust-lang.org/std/sync/struct.RwLock.html#method.write[`RwLock::write`]).
+
+https://www.cs.umd.edu/class/spring2022/cmsc330/lectures/09-interior-mutability.pdf[From lecture], we saw how we can dynamically manage memory (using `Rc` and `RefCell`) while still following the rules.
+
+However, these types do not work across multiple threads. Rc and RefCell use counters to keep track of how many handles exist. These counters only work across a single threaded context (they are not atomic , acquiring handles is not synchronized). Thus, you cannot create an Rc and send it to another thread.
+
+[source, rust]
+----
+let r1 = Rc::new("uwu".to_owned());
+let r2 = Rc::clone(&r1);
+drop(r1); // uwu is kept alive by r2
+println!("{}", r2); // and heres the proof
+
+// alas the next line doesn't compile
+thread::spawn(move || { println!("{}", r2); }).join();
+----
+
+Arc and RwLock are the multithreaded equivalents, they use synchronized counters so that multiple threads and increment / decrement. Thus we can create / delete handles across many threads.
+
+[source, rust]
+----
+let r1 = Arc::new("hello".to_owned());
+let r2 = Arc::clone(&r1);
+
+thread::spawn(move || { println!("{}", r2); }).join().unwrap();
+
+println!("{}", r1); // and heres the proof
+
+----
+
+Here we have created an Arc on one thread, sent it to another thread, used it there, and deleted it on that thread. All while still keeping an Arc for ourselves on the main thread.
+
+We can mutate the contents of our Arc with RwLock.
+
+[source, rust]
+----
+let r1 = Arc::new(RwLock::new("hello".to_owned()));
+let r2 = Arc::clone(&r1);
+
+thread::spawn(move || {
+    let mut w_hand = r2.write().unwrap();
+    w_hand.push_str(" world!");
+})
+.join()
+.unwrap();
+
+// it compiles 🙏
+let r_hand = r1.read().unwrap();
+println!("{}", r_hand);
+----
