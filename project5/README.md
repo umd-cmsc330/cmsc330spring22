@@ -166,15 +166,15 @@ Unlike C or a garbage collected language, you're code will mostly fail to compil
 
 #### Functions
 
-* `pub fn peek(&self) -> Option<Component>`
+* `pub fn peek(&self) -> Option<Armor>`
 
 This function returns (a copy of) the element at the head of the list, assuming the list is not empty. Otherwise, we should return `None` to indicate the list is empty.
 
-* `pub fn pop(&mut self) -> Option<Component>`
+* `pub fn pop(&mut self) -> Option<Armor>`
 
 This method removes and returns the first element of the list. Be careful to consider how to handle the case where this node is shared amongst other lists.
 
-* `pub fn push(&mut self, component: Component) -> ()`
+* `pub fn push(&mut self, component: Armor) -> ()`
 
 This method adds an element to the head end of the list. Be careful to consider the case where other lists may be sharing any preexisting head node. Pushing to this list must not modify any sister lists that share other nodes. We return nothing.
 
