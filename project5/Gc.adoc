@@ -18,7 +18,7 @@ println!("{}", r2); // and heres the proof
 thread::spawn(move || { println!("{}", r2); }).join();
 ----
 
-Arc and RwLock are the multithreaded equivalents, they use synchronized counters so that multiple threads and increment / decrement. Thus we can create / delete handles across many threads.
+Arc and RwLock are the multithreaded equivalents, they use synchronized counters so that multiple threads can increment / decrement. Thus we can create / delete handles across many threads.
 
 [source, rust]
 ----
@@ -33,7 +33,7 @@ println!("{}", r1); // and heres the proof
 
 Here we have created an Arc on one thread, sent it to another thread, used it there, and deleted it on that thread. All while still keeping an Arc for ourselves on the main thread.
 
-We can mutate the contents of our Arc with RwLock.
+We can mutate the contents of our Arc with RwLock. Like RefCell, RwLock maintain its own seperate counter for the read and write handles it hands out. Like normal rust references, we can have as many readers at a time as we want, XOR 1 writer XOR no handles at all. Because Arc/Rc deref to their contents, we can call write on the arc itself. This is syntactic sugar, the method is coming from RwLock, not Arc. 
 
 [source, rust]
 ----
@@ -41,6 +41,7 @@ let r1 = Arc::new(RwLock::new("hello".to_owned()));
 let r2 = Arc::clone(&r1);
 
 thread::spawn(move || {
+    // edit the string using r2
     let mut w_hand = r2.write().unwrap();
     w_hand.push_str(" world!");
 })
@@ -49,5 +50,6 @@ thread::spawn(move || {
 
 // it compiles 🙏
 let r_hand = r1.read().unwrap();
+// and abserve the change using r1
 println!("{}", r_hand);
 ----
