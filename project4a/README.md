@@ -78,7 +78,7 @@ Notes:
 - If the beginning of a string could match multiple tokens, the **longest** match should be preferred, for example:
   - "let0" should not be lexed as `Tok_Let` followed by `Tok_Int 0`, but as `Tok_ID("let0")`, since it is an identifier.
   - "330dlet" should be tokenized as `[Tok_Int 330; Tok_ID "dlet"]`. Arbitrary amounts of whitespace also includes no whitespace.
-  - "(-1)" should not be lexed as `[Tok_LParen; Tok_Sub; Tok_Int(1); Tok_LParen]` but as `Tok_Int(-1)`. (This is further explained below)
+  - "(-1)" should not be lexed as `[Tok_LParen; Tok_Sub; Tok_Int(1); Tok_RParen]` but as `Tok_Int(-1)`. (This is further explained below)
 - There is no "end" token (like `Tok_END` the [lecture][lecture] slides 3-5)  -- when you reach the end of the input, you are done lexing.
 
 Most tokens only exist in one form (for example, the only way for `Tok_Concat` to appear in the program is as `^` and the only way for `Tok_Let` to appear in the program is as `let`). However, a few tokens have more complex rules. The regular expressions for these more complex rules are provided here:
